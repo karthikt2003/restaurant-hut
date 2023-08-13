@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<head>
+    <style>
+        :root{
+    --yellow:#FFC54D;
+    --green:#53BF9D;
+    --red:crimson;
+    --white:whitesmoke;
+}
+body{
+            font-family: latha;
+            color:white;
+            background: url(location.jpg)no-repeat;
+            background-size: cover;
+        }
+
+        .locations{
+    
+    color:var(--white);
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.locations h2{
+    color:var(--green);
+    margin-bottom: .8em;
+}
+
+.locations div{
+    flex:1;
+    padding:1em;
+    min-width:220px;
+}
+#locheading{
+    font-size:2.5em;
+    color:var(--red);
+    display: flex;
+    justify-content: center;
+}
+footer{
+    
+    color:var(--white);
+    padding:.25em 1em;
+}
+
+#copyright{
+    margin-left:20px;
+}
+.social-menu ul{
+    display: flex;
+    padding:0;
+}
+
+.social-menu ul li{
+    list-style: none;
+    display:inline-block;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fab{
+    font-size: 25px;
+    line-height: 40px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu ul li .fab:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+    
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: #4267B2;
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #00ACEE;
+}
+
+    </style>
+</head>
+<body>
+    <h2 id="locheading">Locations</h2>
+    <div class="locations">
+        <div class="annanagar">
+            <h2>Anna Nagar</h2>
+            <address>
+                15, 10th Main Road</br>
+                Anna Nagar,</br>
+                Chennai - 600102 <br>
+                <a href="https://maps.app.goo.gl/5Yvqb5iF5aWdv9EF8" target="_blank">click it to see location</a>
+            </address>
+        </div>
+
+        <div class="velachery">
+            <h2>Velachery</h2>
+            <address>
+                5, 3rd Cross Road,</br>
+                Vijaya Nagar,</br>
+                Velachery,</br>
+                Chennai - 600042
+            </address>
+        </div>
+        <div class="Tambaram">
+            <h2>Tambaram</h2>
+            <address>
+                145, MIT Road,</br>
+                Tambaram,</br>
+                Chennai - 600045
+            </address>
+        </div>
+    </div>
+</div>    
+<br>
+<br>
+<br><br><br><br><br><br><br><br><br><br>
+<footer>
+    <div class="social-menu">
+        <ul>
+            <li><a href="index.html" target="blank"><i class="fab fa-facebook"></i></i></a></li>
+            <li><a href="Menu.html" target="blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="contact.html" target="blank"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </div>
+    <div id="copyright">&#169 copyright krikar Spicy</div>
+</footer>
+</body>
+</html>
